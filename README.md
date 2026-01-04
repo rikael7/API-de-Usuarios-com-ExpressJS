@@ -18,16 +18,16 @@ Clean code and maintainable architecture
 ## 📸 API Demonstration
 
 ### Server Running
-![Server Running](assets/images/server-running.png)
+![Server Running](assets/server-running.png)
 
 ### User Registration
-![User Registration](assets/images/postman-register.png)
+![User Registration](assets/postman-register.png)
 
 ### User Login (JWT)
-![User Login](assets/images/postman-login.png)
+![User Login](assets/postman-login.png)
 
 ### User READ 
-![User READ](assets/images/postman-READ.png)
+![User READ](assets/postman-READ.png)
 
 
 
