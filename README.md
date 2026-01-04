@@ -15,6 +15,22 @@ MVC-inspired project structure
 API testing with Postman
 Clean code and maintainable architecture
 
+## 📸 API Demonstration
+
+### Server Running
+![Server Running](assets/images/server-running.png)
+
+### User Registration
+![User Registration](assets/images/postman-register.png)
+
+### User Login (JWT)
+![User Login](assets/images/postman-login.png)
+
+### User READ 
+![User READ](assets/images/postman-READ.png)
+
+
+
 🛠️ Tech Stack
 Node.js
 Express.js
@@ -53,7 +69,7 @@ CREATE TABLE users (
 );
 
 ⚙️ Installation & Setup
-git clone https://github.com/your-username/sistema-cadastro.git
+git clone https://github.com/rikael7/Register-System-
 npm install
 node app.js
 
