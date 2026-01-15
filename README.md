@@ -1,7 +1,6 @@
 📌 Projeto: API de Usuários com Node.js & Express<br>
 📖 Descrição<br>
-Este projeto consiste em uma API RESTful desenvolvida em Node.js utilizando o framework Express, integrada a um banco de dados MySQL.
-O sistema implementa autenticação com JWT, criptografia de senhas com bcrypt, proteção contra ataques de força bruta com rate limiting e boas práticas de segurança como sanitização e validação de entradas.
+Este projeto consiste em uma API RESTful desenvolvida em Node.js utilizando o framework Express, integrada a um banco de dados MySQL. O sistema implementa autenticação com JWT, criptografia de senhas com bcrypt, proteção contra ataques de força bruta com rate limiting e boas práticas de segurança como sanitização e validação de entradas.
 
 ## 📸 API Demonstration
 ### Server Running
@@ -15,39 +14,40 @@ O sistema implementa autenticação com JWT, criptografia de senhas com bcrypt, 
 
 ### User READ
 ![User READ](assets/postman-READ.png)
-
-🔐 User Authentication API<br>
+**
+🔐 User Authentication API**<br>
 API REST desenvolvida em Node.js para gerenciamento de usuários, com foco em segurança, boas práticas e autenticação JWT.<br>
 Este projeto implementa um CRUD completo de usuários com proteção contra ataques comuns como SQL Injection, XSS, Brute Force e DoS, além de criptografia de senhas.<br>
 <br>
-🚀 Tecnologias Utilizadas<br>
-Node.js<br>
-Express<br>
-MySQL<br>
-bcrypt<br>
-JSON Web Token (JWT)<br>
-express-validator<br>
-express-rate-limit<br>
-dotenv<br>
 
-📌 Funcionalidades<br>
-Cadastro de usuários<br>
-Login com autenticação JWT<br>
-Listagem de usuários<br>
-Busca por ID<br>
-Atualização de dados<br>
-Remoção de usuários<br>
-Criptografia de senha<br>
-Validação de dados<br>
+**🚀 Tecnologias Utilizadas:**<br>
+✔Node.js<br>
+✔Express<br>
+✔MySQL<br>
+✔bcrypt<br>
+✔JSON Web Token (JWT)<br>
+✔express-validator<br>
+✔express-rate-limit<br>
+✔dotenv<br>
+<br>
+**📌 Funcionalidades**<br>
+✔Cadastro de usuários<br>
+✔Login com autenticação JWT<br>
+✔Listagem de usuários<br>
+✔Busca por ID<br>
+✔Atualização de dados<br>
+✔Remoção de usuários<br>
+✔Criptografia de senha<br>
+✔Validação de dados<br>
 <br>
 Proteção contra:<br>
-SQL Injection<br>
-XSS<br>
-Brute Force<br>
-DoS<br>
-Emails duplicados<br>
+✔SQL Injection<br>
+✔XSS<br>
+✔Brute Force<br>
+✔DoS<br>
+✔Emails duplicados<br>
 <br>
-🔒 Segurança Implementada
+**🔒 Segurança Implementada**
 <br>
 ✔Hash de senha com bcrypt<br>
 ✔Queries parametrizadas (SQL Injection)<br>
@@ -57,7 +57,7 @@ Emails duplicados<br>
 ✔Validação de dados com express-validator<br>
 ✔Variáveis de ambiente para dados sensíveis<br>
 <br>
-⚙️ Configuração do Ambiente
+**⚙️ Configuração do Ambiente**
 <br>
 Crie um arquivo .env na raiz do projeto:<br>
 DB_HOST=localhost<br>
@@ -66,46 +66,31 @@ DB_PASSWORD=12345<br>
 DB_NAME=sistema_cadastro<br>
 SECRET_KEY=sua_chave_secreta<br>
 <br>
-📦 Instalação<br>
+**📦 Instalação<br>**
 npm install<br>
 
-▶️ Executar o projeto<br>
+**▶️ Executar o projeto<br>**
 node app.js<br>
 
 Servidor rodando em:<br>
 http://localhost:3000<br>
 <br>
-📚 Rotas da API<br>
+**📚 Rotas da API<br>**
 🔹 Cadastro de usuário<br>
-POST /users/register<br>
-{<br>
-  "nome": "João",<br>
-  "email": "joao@email.com",<br>
-  "senha": "123456"<br>
-}<br>
-
+POST /users/register
 🔹 Login<br>
 POST /users/login<br>
-{<br>
-  "email": "joao@email.com",<br>
-  "senha": "123456"<br>
-}<br>
-
 🔹 Listar usuários<br>
 GET /users<br>
 🔹 Buscar usuário por ID<br>
 GET /users/:id<br>
 🔹 Atualizar usuário<br>
 PUT /users/:id<br>
-{<br>
-  "nome": "Novo Nome",<br>
-  "email": "novo@email.com"<br>
-}<br>
 🔹 Remover usuário<br>
 DELETE /users/:id<br>
-
-🗄️ Estrutura do Projeto<br>
-📂 Estrutura<br>
+<br>
+**🗄️ Estrutura do Projeto:<br>**
+**📂 Estrutura<br>**
 Código<br>
 ├── app.js<br>
 ├── routes/<br>
@@ -121,19 +106,19 @@ Código<br>
 <br>
 
 
-📈 Objetivo do Projeto<br>
+**📈 Objetivo do Projeto<br>**
 Este projeto foi desenvolvido para:<br>
 Praticar APIs REST<br>
 Aplicar conceitos de segurança<br>
 Demonstrar boas práticas de backend<br>
 Servir como portfólio para vagas de Desenvolvedor Júnior<br>
 
-👨‍💻 Autor<br>
+**👨‍💻 Autor<br>**
 
 Rikael Ribeiro
 Desenvolvedor em formação focado em backend, segurança e boas práticas.
 
-⭐ Considerações Finais<br>
+**⭐ Considerações Finais<br>**
 Este projeto demonstra:<br>
 ✔ Organização de códigov
 ✔ Segurança<br>
