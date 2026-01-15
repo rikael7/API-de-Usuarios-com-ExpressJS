@@ -89,7 +89,7 @@ PUT /users/:id<br>
 🔹 Remover usuário<br>
 DELETE /users/:id<br>
 <br>
-<h2>**🗄️ Estrutura do Projeto:<br>**</h2>
+<h2>🗄️ Estrutura do Projeto:<br></h2>
 <h2>**📂 Estrutura<br>**</h2>
 Código<br>
 ├── app.js<br>
@@ -113,7 +113,7 @@ Aplicar conceitos de segurança<br>
 Demonstrar boas práticas de backend<br>
 Servir como portfólio para vagas de Desenvolvedor Júnior<br>
 
-<h2>**👨‍💻 Autor<br>**</h2>
+<h2>👨‍💻 Autor<br></h2>
 Rikael Ribeiro
 Desenvolvedor em formação focado em backend, segurança e boas práticas.
 
