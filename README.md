@@ -1,131 +1,97 @@
-User Registration System | Node.js • Express • MySQL
-
-Backend application developed with Node.js, Express, and MySQL, featuring RESTful APIs, JWT authentication, and full CRUD operations.
-This project demonstrates backend fundamentals, clean architecture, and industry-standard practices commonly required for Junior to Mid-Level Backend Developer roles.
-
-🔑 Key Skills Demonstrated (ATS Optimized)
-Backend Development with Node.js
-RESTful API design and implementation
-CRUD operations (Create, Read, Update, Delete)
-MySQL relational database
-JWT authentication
-
-Password hashing with bcrypt
-MVC-inspired project structure
-API testing with Postman
-Clean code and maintainable architecture
+📌 Projeto: API de Usuários com Node.js & Express
+📖 Descrição
+Este projeto consiste em uma API RESTful desenvolvida em Node.js utilizando o framework Express, integrada a um banco de dados MySQL.
+O sistema implementa autenticação com JWT, criptografia de senhas com bcrypt, proteção contra ataques de força bruta com rate limiting e boas práticas de segurança como sanitização e validação de entradas.
 
 ## 📸 API Demonstration
 
 ### Server Running
+
 ![Server Running](assets/server-running.png)
 
 ### User Registration
+
 ![User Registration](assets/postman-register.png)
 
 ### User Login (JWT)
+
 ![User Login](assets/postman-login.png)
 
-### User READ 
+### User READ
+
 ![User READ](assets/postman-READ.png)
 
-
-
-🛠️ Tech Stack
+⚙️ Tecnologias
 Node.js
 Express.js
-MySQL
-JavaScript (ES6+)
-JWT (jsonwebtoken)
+MySQL (mysql2)
 bcrypt
-body-parser
+jsonwebtoken (JWT)
+express-rate-limit
+express-validator
+dotenv
 
-📂 Project Structure
-sistema-cadastro/
-│
-├── controllers/     # Business logic and data handling
-├── models/          # Database connection
-├── routes/          # API endpoints
-├── app.js           # Application entry point
+🔒 Funcionalidades
+Cadastro de usuários com criptografia de senha
+Login com geração de token JWT
+Listagem de usuários
+Busca de usuário por ID
+Atualização de dados de usuário
+Remoção de usuário
+Middleware de segurança:
+Rate Limiting global
+Rate Limiting específico para login
+Sanitização e validação de inputs
+
+📂 Estrutura
+Código
+├── app.js
+├── routes/
+│ └── userRoutes.js
+├── controllers/
+│ └── userController.js
+├── models/
+│ └── db.js
+├── middlewares/
+│ ├── limiters.js
+│ └── validator.js
 └── package.json
 
-🧠 Architecture & Design
-Separation of concerns using controllers, routes, and models
-Modular and scalable codebase
-RESTful conventions for endpoints and HTTP methods
-Prepared for future enhancements such as middleware, validation, and authorization
-This architecture reflects real-world backend applications and common industry patterns.
+🚀 Execução
+Clone o repositório:
+bash
+git clone https://github.com/seu-usuario/nome-do-projeto.git
 
-🗄️ Database Design
-Relational database using MySQL
-Unique constraints to ensure data consistency
-Secure password storage using hashing
-
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    senha VARCHAR(255) NOT NULL
-);
-
-⚙️ Installation & Setup
-git clone https://github.com/rikael7/Register-System-
+Instale as dependências:
+bash
 npm install
-node app.js
+Crie e Configure um arquivo .env:
 
-Server runs on:
-http://localhost:3000
+Código
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=sua_senha
+DB_NAME=seu_banco
+SECRET_KEY=sua_chave_secreta
+Inicie o servidor:
 
-🔌 API Endpoints
-Authentication
-Method	Endpoint	Description
-POST	/users/register	Register new user
-POST	/users/login	Authenticate user (JWT)
-User Management (CRUD)
-Method	Endpoint	Description
-GET	/users	Retrieve all users
-GET	/users/:id	Retrieve user by ID
-PUT	/users/:id	Update user
-DELETE	/users/:id	Delete user
-📬 Example API Request
-{
-  "nome": "John Doe",
-  "email": "john@example.com",
-  "senha": "123456"
-}
+bash
+npm start
+Acesse:
 
-🔐 Security Practices
+Código
+http://localhost:3000/users
+📌 Endpoints
+Método Rota Descrição
+POST /users/register Cadastro de usuário
+POST /users/login Login e geração de token JWT
+GET /users Listar todos os usuários
+GET /users/:id Buscar usuário por ID
+PUT /users/:id Atualizar usuário
+DELETE /users/:id Remover usuário
 
-Password hashing using bcrypt
-JWT token generation for authentication
-Sensitive data excluded from API responses
-Prepared for environment variable usage in production
-
-🧪 Testing
-
-All endpoints tested using Postman
-Manual API validation for request/response flow
-Clear separation between public and private endpoints
-
-🎯 Project Purpose
-
-This project was built to:
-Practice backend development concepts
-Demonstrate API design and database integration
-Apply authentication fundamentals
-Showcase readiness for Junior to Mid-Level Backend Developer positions
-
-🚧 Planned Improvements
-
-Authentication middleware
-Route protection
-Input validation (Joi / Zod)
-Environment variables (dotenv)
-Pagination and filtering
-Role-based access control
-
-👨‍💻 Author
-
-Rikael Ribeiro
-Backend Developer
-GitHub: https://github.com/rikael7
+🌟 Destaques Técnicos
+Estrutura modular e organizada
+Implementação de boas práticas de segurança (XSS, SQL Injection, brute force)
+Middleware customizado para validação e limitação de requisições
+Código limpo e de fácil manutenção
