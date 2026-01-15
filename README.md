@@ -14,13 +14,13 @@ Este projeto consiste em uma API RESTful desenvolvida em Node.js utilizando o fr
 
 ### User READ
 ![User READ](assets/postman-READ.png)
-**
-<h2>**🔐 User Authentication API**<br>**</h2>
+
+<h2>🔐 User Authentication API<br></h2>
 API REST desenvolvida em Node.js para gerenciamento de usuários, com foco em segurança, boas práticas e autenticação JWT.<br>
 Este projeto implementa um CRUD completo de usuários com proteção contra ataques comuns como SQL Injection, XSS, Brute Force e DoS, além de criptografia de senhas.<br>
 <br>
 
-<h2>**🚀 Tecnologias Utilizadas:**<br></h2>
+<h2>🚀 Tecnologias Utilizadas:<br></h2>
 ✔Node.js<br>
 ✔Express<br>
 ✔MySQL<br>
@@ -30,7 +30,7 @@ Este projeto implementa um CRUD completo de usuários com proteção contra ataq
 ✔express-rate-limit<br>
 ✔dotenv<br>
 <br>
-<h2>**📌 Funcionalidades**<br></h2>
+<h2>📌 Funcionalidades<br></h2>
 ✔Cadastro de usuários<br>
 ✔Login com autenticação JWT<br>
 ✔Listagem de usuários<br>
@@ -47,7 +47,7 @@ Proteção contra:<br>
 ✔DoS<br>
 ✔Emails duplicados<br>
 <br>
-<h2>**🔒 Segurança Implementada**</h2>
+<h2>🔒 Segurança Implementada</h2>
 <br>
 ✔Hash de senha com bcrypt<br>
 ✔Queries parametrizadas (SQL Injection)<br>
@@ -57,7 +57,7 @@ Proteção contra:<br>
 ✔Validação de dados com express-validator<br>
 ✔Variáveis de ambiente para dados sensíveis<br>
 <br>
-<h2>**⚙️ Configuração do Ambiente**</h2>
+<h2>⚙️ Configuração do Ambiente</h2>
 <br>
 Crie um arquivo .env na raiz do projeto:<br>
 DB_HOST=localhost<br>
@@ -66,16 +66,16 @@ DB_PASSWORD=12345<br>
 DB_NAME=sistema_cadastro<br>
 SECRET_KEY=sua_chave_secreta<br>
 <br>
-<h2>**📦 Instalação<br>**</h2>
+<h2>📦 Instalação<br></h2>
 npm install<br>
 
-<h2>**▶️ Executar o projeto<br>**</h2>
+<h2>▶️ Executar o projeto<br></h2>
 node app.js<br>
 
 Servidor rodando em:<br>
 http://localhost:3000<br>
 <br>
-<h2>**📚 Rotas da API<br>**</h2>
+<h2>📚 Rotas da API<br></h2>
 🔹 Cadastro de usuário<br>
 POST /users/register
 🔹 Login<br>
@@ -90,7 +90,7 @@ PUT /users/:id<br>
 DELETE /users/:id<br>
 <br>
 <h2>🗄️ Estrutura do Projeto:<br></h2>
-<h2>**📂 Estrutura<br>**</h2>
+<h2>📂 Estrutura<br></h2>
 Código<br>
 ├── app.js<br>
 ├── routes/<br>
@@ -106,7 +106,7 @@ Código<br>
 <br>
 
 
-<h2>**📈 Objetivo do Projeto<br>**</h2>
+<h2>📈 Objetivo do Projeto<br></h2>
 Este projeto foi desenvolvido para:<br>
 Praticar APIs REST<br>
 Aplicar conceitos de segurança<br>
@@ -117,7 +117,7 @@ Servir como portfólio para vagas de Desenvolvedor Júnior<br>
 Rikael Ribeiro
 Desenvolvedor em formação focado em backend, segurança e boas práticas.
 
-<h2>**⭐ Considerações Finais<br>**</h2>
+<h2>⭐ Considerações Finais<br></h2>
 Este projeto demonstra:<br>
 ✔ Organização de códigov
 ✔ Segurança<br>
