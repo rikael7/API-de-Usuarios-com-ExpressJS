@@ -63,12 +63,12 @@ bash<br>
 git clone https://github.com/seu-usuario/API-de-Usuarios-com-ExpressJS.git
 <br>
 
-Instale as dependências:<br>
+🟢Instale as dependências:<br>
 bash<br>
 npm install<br>
-Crie e Configure um arquivo .env:
+🟢Crie e Configure um arquivo .env:
 <br>
-Código<br>
+Configure suas variáveis<br>
 DB_HOST=localhost<br>
 DB_USER=root<br>
 DB_PASSWORD=sua_senha<br>
@@ -81,18 +81,19 @@ bash<br>
 npm start<br>
 Acesse:http://localhost:3000/users
 <br>
+
 📌 Endpoints<br>
 Método Rota Descrição<br>
-POST /users/register Cadastro de usuário<br>
-POST /users/login Login e geração de token JWT<br>
-GET /users Listar todos os usuários<br>
-GET /users/:id Buscar usuário por ID<br>
-PUT /users/:id Atualizar usuário<br>
-DELETE /users/:id Remover usuário
+🟢POST /users/register Cadastro de usuário<br>
+🟢POST /users/login Login e geração de token JWT<br>
+🟢GET /users Listar todos os usuários<br>
+🟢GET /users/:id Buscar usuário por ID<br>
+🟢PUT /users/:id Atualizar usuário<br>
+🟢DELETE /users/:id Remover usuário
 <br>
 
 🌟 Destaques Técnicos<br>
-Estrutura modular e organizada<br>
-Implementação de boas práticas de segurança (XSS, SQL Injection, brute force)<br>
-Middleware customizado para validação e limitação de requisições<br>
-Código limpo e de fácil manutenção<br>
+🟢Estrutura modular e organizada<br>
+🟢Implementação de boas práticas de segurança (XSS, SQL Injection, brute force)<br>
+🟢Middleware customizado para validação e limitação de requisições<br>
+🟢Código limpo e de fácil manutenção<br>
