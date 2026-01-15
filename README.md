@@ -16,96 +16,96 @@ O sistema implementa autenticação com JWT, criptografia de senhas com bcrypt, 
 ### User READ
 ![User READ](assets/postman-READ.png)
 
-🔐 User Authentication API
-API REST desenvolvida em Node.js para gerenciamento de usuários, com foco em segurança, boas práticas e autenticação JWT.
-Este projeto implementa um CRUD completo de usuários com proteção contra ataques comuns como SQL Injection, XSS, Brute Force e DoS, além de criptografia de senhas.
+🔐 User Authentication API<br>
+API REST desenvolvida em Node.js para gerenciamento de usuários, com foco em segurança, boas práticas e autenticação JWT.<br>
+Este projeto implementa um CRUD completo de usuários com proteção contra ataques comuns como SQL Injection, XSS, Brute Force e DoS, além de criptografia de senhas.<br>
+<br>
+🚀 Tecnologias Utilizadas<br>
+Node.js<br>
+Express<br>
+MySQL<br>
+bcrypt<br>
+JSON Web Token (JWT)<br>
+express-validator<br>
+express-rate-limit<br>
+dotenv<br>
 
-🚀 Tecnologias Utilizadas
-Node.js
-Express
-MySQL
-bcrypt
-JSON Web Token (JWT)
-express-validator
-express-rate-limit
-dotenv
-
-📌 Funcionalidades
-Cadastro de usuários
-Login com autenticação JWT
-Listagem de usuários
-Busca por ID
-Atualização de dados
-Remoção de usuários
-Criptografia de senha
-Validação de dados
-
-Proteção contra:
-SQL Injection
-XSS
-Brute Force
-DoS
-Emails duplicados
-
+📌 Funcionalidades<br>
+Cadastro de usuários<br>
+Login com autenticação JWT<br>
+Listagem de usuários<br>
+Busca por ID<br>
+Atualização de dados<br>
+Remoção de usuários<br>
+Criptografia de senha<br>
+Validação de dados<br>
+<br>
+Proteção contra:<br>
+SQL Injection<br>
+XSS<br>
+Brute Force<br>
+DoS<br>
+Emails duplicados<br>
+<br>
 🔒 Segurança Implementada
-
-Hash de senha com bcrypt
-Queries parametrizadas (SQL Injection)
-Sanitização de inputs (XSS)
-Rate Limit global (DoS)
-Rate Limit específico para login (Brute Force)
-Validação de dados com express-validator
-Variáveis de ambiente para dados sensíveis
-
+<br>
+✔Hash de senha com bcrypt<br>
+✔Queries parametrizadas (SQL Injection)<br>
+✔Sanitização de inputs (XSS)<br>
+✔Rate Limit global (DoS)<br>
+✔Rate Limit específico para login (Brute Force)<br>
+✔Validação de dados com express-validator<br>
+✔Variáveis de ambiente para dados sensíveis<br>
+<br>
 ⚙️ Configuração do Ambiente
+<br>
+Crie um arquivo .env na raiz do projeto:<br>
+DB_HOST=localhost<br>
+DB_USER=root<br>
+DB_PASSWORD=12345<br>
+DB_NAME=sistema_cadastro<br>
+SECRET_KEY=sua_chave_secreta<br>
+<br>
+📦 Instalação<br>
+npm install<br>
 
-Crie um arquivo .env na raiz do projeto:
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=12345
-DB_NAME=sistema_cadastro
-SECRET_KEY=sua_chave_secreta
+▶️ Executar o projeto<br>
+node app.js<br>
 
-📦 Instalação
-npm install
+Servidor rodando em:<br>
+http://localhost:3000<br>
+<br>
+📚 Rotas da API<br>
+🔹 Cadastro de usuário<br>
+POST /users/register<br>
+{<br>
+  "nome": "João",<br>
+  "email": "joao@email.com",<br>
+  "senha": "123456"<br>
+}<br>
 
-▶️ Executar o projeto
-node app.js
+🔹 Login<br>
+POST /users/login<br>
+{<br>
+  "email": "joao@email.com",<br>
+  "senha": "123456"<br>
+}<br>
 
-Servidor rodando em:
-http://localhost:3000
+🔹 Listar usuários<br>
+GET /users<br>
+🔹 Buscar usuário por ID<br>
+GET /users/:id<br>
+🔹 Atualizar usuário<br>
+PUT /users/:id<br>
+{<br>
+  "nome": "Novo Nome",<br>
+  "email": "novo@email.com"<br>
+}<br>
+🔹 Remover usuário<br>
+DELETE /users/:id<br>
 
-📚 Rotas da API
-🔹 Cadastro de usuário
-POST /users/register
-{
-  "nome": "João",
-  "email": "joao@email.com",
-  "senha": "123456"
-}
-
-🔹 Login
-POST /users/login
-{
-  "email": "joao@email.com",
-  "senha": "123456"
-}
-
-🔹 Listar usuários
-GET /users
-🔹 Buscar usuário por ID
-GET /users/:id
-🔹 Atualizar usuário
-PUT /users/:id
-{
-  "nome": "Novo Nome",
-  "email": "novo@email.com"
-}
-🔹 Remover usuário
-DELETE /users/:id
-
-🗄️ Estrutura do Projeto
-📂 Estrutura
+🗄️ Estrutura do Projeto<br>
+📂 Estrutura<br>
 Código<br>
 ├── app.js<br>
 ├── routes/<br>
@@ -121,23 +121,23 @@ Código<br>
 <br>
 
 
-📈 Objetivo do Projeto
-Este projeto foi desenvolvido para:
-Praticar APIs REST
-Aplicar conceitos de segurança
-Demonstrar boas práticas de backend
-Servir como portfólio para vagas de Desenvolvedor Júnior
+📈 Objetivo do Projeto<br>
+Este projeto foi desenvolvido para:<br>
+Praticar APIs REST<br>
+Aplicar conceitos de segurança<br>
+Demonstrar boas práticas de backend<br>
+Servir como portfólio para vagas de Desenvolvedor Júnior<br>
 
-👨‍💻 Autor
+👨‍💻 Autor<br>
 
 Rikael Ribeiro
 Desenvolvedor em formação focado em backend, segurança e boas práticas.
 
-⭐ Considerações Finais
-Este projeto demonstra:
-✔ Organização de código
-✔ Segurança
-✔ Boas práticas
-✔ Conhecimento real de backend
+⭐ Considerações Finais<br>
+Este projeto demonstra:<br>
+✔ Organização de códigov
+✔ Segurança<br>
+✔ Boas práticas<br>
+✔ Conhecimento real de backend<br>
 
 Ideal para portfólio e entrevistas técnicas.
