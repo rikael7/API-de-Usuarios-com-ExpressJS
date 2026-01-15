@@ -119,7 +119,7 @@ Desenvolvedor em formação focado em backend, segurança e boas práticas.
 
 <h2>⭐ Considerações Finais<br></h2>
 Este projeto demonstra:<br>
-✔ Organização de códigov
+✔ Organização de código<br>
 ✔ Segurança<br>
 ✔ Boas práticas<br>
 ✔ Conhecimento real de backend<br>
