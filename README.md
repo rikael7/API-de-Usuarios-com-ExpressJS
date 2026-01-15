@@ -26,6 +26,7 @@ express-rate-limit<br>
 express-validator<br>
 dotenv
 <br>
+
 🔒 Funcionalidades<br>
 Cadastro de usuários com criptografia de senha<br>
 Login com geração de token JWT<br>
@@ -34,11 +35,13 @@ Busca de usuário por ID<br>
 Atualização de dados de usuário<br>
 Remoção de usuário
 <br>
+
 🔒Middleware de segurança:<br>
 Rate Limiting global<br>
 Rate Limiting específico para login<br>
 Sanitização e validação de inputs
 <br>
+
 📂 Estrutura
 Código<br>
 ├── app.js<br>
@@ -53,11 +56,13 @@ Código<br>
 │ └── validator.js<br>
 └── package.json
 <br>
+
 🚀 Execução
 Clone o repositório:<br>
 bash<br>
 git clone https://github.com/seu-usuario/nome-do-projeto.git
 <br>
+
 Instale as dependências:<br>
 bash<br>
 npm install<br>
@@ -69,6 +74,7 @@ DB_USER=root<br>
 DB_PASSWORD=sua_senha<br>
 DB_NAME=seu_banco<br>
 SECRET_KEY=sua_chave_secreta<br>
+
 Inicie o servidor:
 <br>
 bash<br>
