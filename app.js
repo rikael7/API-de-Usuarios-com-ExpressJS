@@ -1,9 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const userRoutes = require('./routes/userRoutes');
+const { globalLimiter } = require('./middlewares/limiters');
 
 const app = express();
 const PORT = 3000;
+app.use(globalLimiter);
+
 
 // Middleware
 app.use(bodyParser.json());
