@@ -1,5 +1,5 @@
-📌 Projeto: API de Usuários com Node.js & Express
-📖 Descrição
+📌 Projeto: API de Usuários com Node.js & Express<br>
+📖 Descrição<br>
 Este projeto consiste em uma API RESTful desenvolvida em Node.js utilizando o framework Express, integrada a um banco de dados MySQL.
 O sistema implementa autenticação com JWT, criptografia de senhas com bcrypt, proteção contra ataques de força bruta com rate limiting e boas práticas de segurança como sanitização e validação de entradas.
 
@@ -21,77 +21,77 @@ O sistema implementa autenticação com JWT, criptografia de senhas com bcrypt, 
 
 ![User READ](assets/postman-READ.png)
 
-⚙️ Tecnologias
-Node.js
-Express.js
-MySQL (mysql2)
-bcrypt
-jsonwebtoken (JWT)
-express-rate-limit
-express-validator
-dotenv
+⚙️ Tecnologias<br>
+Node.js<br>
+Express.js<br>
+MySQL (mysql2)<br>
+bcrypt<br>
+jsonwebtoken (JWT)<br>
+express-rate-limit<br>
+express-validator<br>
+dotenv<br>
+<br>
+🔒 Funcionalidades<br>
+Cadastro de usuários com criptografia de senha<br>
+Login com geração de token JWT<br>
+Listagem de usuários<br>
+Busca de usuário por ID<br>
+Atualização de dados de usuário<br>
+Remoção de usuário<br>
+<br>
 
-🔒 Funcionalidades
-Cadastro de usuários com criptografia de senha
-Login com geração de token JWT
-Listagem de usuários
-Busca de usuário por ID
-Atualização de dados de usuário
-Remoção de usuário
-Middleware de segurança:
-Rate Limiting global
-Rate Limiting específico para login
-Sanitização e validação de inputs
-
+Middleware de segurança:<br>
+Rate Limiting global<br>
+Rate Limiting específico para login<br>
+Sanitização e validação de inputs<br>
+<br>
 📂 Estrutura
-Código
-├── app.js
-├── routes/
-│ └── userRoutes.js
-├── controllers/
-│ └── userController.js
-├── models/
-│ └── db.js
-├── middlewares/
-│ ├── limiters.js
-│ └── validator.js
-└── package.json
+Código<br>
+├── app.js<br>
+├── routes/<br>
+│ └── userRoutes.js<br>
+├── controllers/<br>
+│ └── userController.js<br>
+├── models/<br>
+│ └── db.js<br>
+├── middlewares/<br>
+│ ├── limiters.js<br>
+│ └── validator.js<br>
+└── package.json<br>
 
 🚀 Execução
-Clone o repositório:
-bash
-git clone https://github.com/seu-usuario/nome-do-projeto.git
+Clone o repositório:<br>
+bash<br>
+git clone https://github.com/seu-usuario/nome-do-projeto.git<br>
 
-Instale as dependências:
-bash
-npm install
-Crie e Configure um arquivo .env:
+Instale as dependências:<br>
+bash<br>
+npm install<br>
+Crie e Configure um arquivo .env:<br>
 
-Código
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=sua_senha
-DB_NAME=seu_banco
-SECRET_KEY=sua_chave_secreta
-Inicie o servidor:
+Código<br>
+DB_HOST=localhost<br>
+DB_USER=root<br>
+DB_PASSWORD=sua_senha<br>
+DB_NAME=seu_banco<br>
+SECRET_KEY=sua_chave_secreta<br>
+Inicie o servidor:<br>
 
-bash
-npm start
-Acesse:
+bash<br>
+npm start<br>
+Acesse:http://localhost:3000/users
+<br>
+📌 Endpoints<br>
+Método Rota Descrição<br>
+POST /users/register Cadastro de usuário<br>
+POST /users/login Login e geração de token JWT<br>
+GET /users Listar todos os usuários<br>
+GET /users/:id Buscar usuário por ID<br>
+PUT /users/:id Atualizar usuário<br>
+DELETE /users/:id Remover usuário<br>
 
-Código
-http://localhost:3000/users
-📌 Endpoints
-Método Rota Descrição
-POST /users/register Cadastro de usuário
-POST /users/login Login e geração de token JWT
-GET /users Listar todos os usuários
-GET /users/:id Buscar usuário por ID
-PUT /users/:id Atualizar usuário
-DELETE /users/:id Remover usuário
-
-🌟 Destaques Técnicos
-Estrutura modular e organizada
-Implementação de boas práticas de segurança (XSS, SQL Injection, brute force)
-Middleware customizado para validação e limitação de requisições
-Código limpo e de fácil manutenção
+🌟 Destaques Técnicos<br>
+Estrutura modular e organizada<br>
+Implementação de boas práticas de segurança (XSS, SQL Injection, brute force)<br>
+Middleware customizado para validação e limitação de requisições<br>
+Código limpo e de fácil manutenção<br>
