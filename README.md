@@ -32,7 +32,7 @@ Este projeto implementa um CRUD completo de usuários com proteção contra ataq
 <br>
 <h2>📌 Funcionalidades<br></h2>
 ✔Cadastro de usuários<br>
-✔Login com autenticação JWT<br>
+✔ com autenticação JWT<br>
 ✔Listagem de usuários<br>
 ✔Busca por ID<br>
 ✔Atualização de dados<br>
@@ -77,7 +77,7 @@ http://localhost:3000<br>
 <br>
 <h2>📚 Rotas da API<br></h2>
 🔹 Cadastro de usuário<br>
-POST /users/register
+POST /users/register<br>
 🔹 Login<br>
 POST /users/login<br>
 🔹 Listar usuários<br>
