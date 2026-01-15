@@ -60,7 +60,7 @@ Código<br>
 🚀 Execução
 Clone o repositório:<br>
 bash<br>
-git clone https://github.com/seu-usuario/nome-do-projeto.git
+git clone https://github.com/seu-usuario/API-de-Usuarios-com-ExpressJS.git
 <br>
 
 Instale as dependências:<br>
